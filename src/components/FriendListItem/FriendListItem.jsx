@@ -1,9 +1,17 @@
-const FriendListItem = () => {
-    return (<li class="item">
-  <span class="status"></span>
-  <img class="avatar" src="" alt="User avatar" width="48" />
-  <p class="name"></p>
-</li>)
+
+const FriendListItem = ({ avatar, name, isOnline}) => {
+  return (
+    <li className="item">
+      <span className="status">{isOnline}</span>
+      <img
+        className="avatar"
+        src={avatar}
+        alt={name}
+        width="48"
+      />
+      <p className="name">{name}</p>
+    </li>
+  );
 };
 
 export default FriendListItem;
