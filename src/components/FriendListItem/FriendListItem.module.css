@@ -1,0 +1,28 @@
+.item {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-shadow: 2px 2px 4px #636262;
+}
+
+.item:not(:last-child){
+    margin-bottom: 14px;
+}
+.status {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.avatar {
+    margin-right: 10px;
+    width: 30%;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+}

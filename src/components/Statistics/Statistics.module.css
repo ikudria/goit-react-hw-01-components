@@ -1,0 +1,33 @@
+.statistics {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    color: grey;
+
+}
+
+.list{
+    display: flex;
+}
+
+.item{
+    width: 20%;
+    padding-top: 12px;
+    padding-bottom: 12px;;
+}
+.label{ 
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: rgb(131, 190, 218);
+}
+
+.percentage {
+    font-size: 28px;
+    color: rgb(131, 190, 218);
+}

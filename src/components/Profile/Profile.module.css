@@ -1,42 +1,62 @@
+.profile {
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 2px 2px 4px #636262;
+}
+
 .description {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
- 
-    
-    
+    font-weight: bold;    
 }
 
 .avatar {
-   /* object-fit: contain; */
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
+    border-radius: 30%;
+    width: 40%;
+    margin-bottom: 30px;
 }
 
 .name{
     font-size: 40px;
+    margin-bottom: 18px;
 }
 
+.tag {
+    margin-bottom: 18px;
+    color: grey;
+}
+.location{
+    color: grey;
+}
 .stats {
     justify-items: center;
     display: flex;
+    background-color: rgb(234, 240, 241);
+    border-top: 1px solid grey;
 }
+
 
 .item {
-    border: 1px solid grey;
-    background-color: rgb(224, 242, 246);
-    width: 33.3%;
+   
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+
+}
+.item:not(:last-child) {
+    border-right: 1px solid grey;
 }
 
-ul {
-    list-style-type: none;
-}
 .label {
+    margin-bottom: 8px;
     display: block;
-    color: grey
+    font-weight: 600;
+    color: grey;
 }
-.label:not(:last-child) {
-    margin-right: 50px;
+
+.quantity{
+    display: block;
+    font-weight: bold;
+}
     
-}
