@@ -4,7 +4,8 @@ import s from './FriendListItem.module.css'
 const FriendListItem = ({ avatar, name, isOnline}) => {
   return (
     <li className={s.item}>
-      <span className={s.status}>{isOnline}</span>
+      {isOnline ?
+        (<span className={s.status} style={{ backgroundColor: 'green' }}></span>) : (<span className={s.status} style={{ backgroundColor: 'red' }}></span>)}
       <img
         className={s.avatar}
         src={avatar}
