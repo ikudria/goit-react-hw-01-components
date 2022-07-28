@@ -7,6 +7,8 @@ import user from '../data/user.json';
 import data from '../data/data.json';
 import transactions from '../data/transactions.json';
 
+console.log(data[0].label);
+
 export const App = () => {
   return (
     <>
@@ -18,19 +20,8 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
-      {/* <Statistics stats={data} /> */}
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </>
   );
 };
-
-//  style={{
-
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 20,
-//         color: '#010101'
-//       }}
